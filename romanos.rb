@@ -1,6 +1,6 @@
 require 'test/unit'
 
-class RomanoTest < ActiveSupport::TestCase
+class RomanoTest < Test::Unit::TestCase
   # test "the truth" do
   #   assert true
   # end
@@ -15,6 +15,10 @@ class RomanoTest < ActiveSupport::TestCase
 
   def test_2
     assert_equal "II", @romanos.convertir(2)
+  end
+
+  def test_3
+    assert_equal "III", @romanos.convertir(3)
   end
 end
 
