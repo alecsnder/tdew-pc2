@@ -20,10 +20,16 @@ class RomanoTest < Test::Unit::TestCase
   def test_3
     assert_equal "III", @romanos.convertir(3)
   end
+
+  #def test_4
+   # assert_equal "IV", @romanos.convertir(4)
+  #end
 end
 
 class Romanos
 	def convertir(numero)
-			"I" * numero 
+      	
+      "I" * numero 
 	end
+
 end
